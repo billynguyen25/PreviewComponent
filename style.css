@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+/*- Dark cyan: hsl(158, 36%, 37%)
+- Cream: hsl(30, 38%, 92%)
+- Very dark blue: hsl(212, 21%, 14%)
+- Dark grayish blue: hsl(228, 12%, 48%)
+- White: hsl(0, 0%, 100%) */
+
+* {
+    margin:0px;
+    box-sizing: border-box;
+    padding:0px;
+}
+
+picture img{
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+}
+
+body{
+    background-color: hsl(30, 38%, 92%);
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 1px);
+    font-family: 'Montserrat';
+    margin-top: 50px;
+}
+
+article:last-child{
+    background-color: hsl(0, 0%, 100%);
+    margin-top: -4px;
+    padding: 6%;
+    border-radius: 0 0 1rem 1rem;
+}
+
+article:last-child h1{
+    color: hsl(212, 21%, 14%);
+    font-family: 'Fraunces';
+    padding: 2% 2% 2% 0;
+    font-size: 2.3rem;
+}
+
+article:last-child h2{
+    text-transform: uppercase;
+    font-family: inherit;
+    font-size: 14px;
+    letter-spacing: 3px;
+    color: hsl(228, 12%, 48%);
+    padding-left: 4px;
+    font-weight: 300;
+}
+
+article:last-child p{
+    color: hsl(228, 12%, 48%);
+    font-family: inherit;
+    line-height: 1.6rem;
+    font-size: 16px;
+    padding-right: 5%;
+    padding-top: 8px;
+    padding-bottom: 20px;
+}
+
+ul li{
+    list-style-type: none;
+    display: inline;
+    padding: 5% 8% 5% 0;
+}
+
+ul li:first-child{
+    font-family: 'Fraunces';
+    font-size: 40px;
+    color: hsl(158, 36%, 37%);
+}
+
+ul li:last-child{
+    color: hsl(228, 12%, 48%);
+    position: relative;
+    bottom: 7px;
+}
+
+.btn{
+    width: 100%;
+    padding: 4%;
+    margin-top: 25px;
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    background-color: hsl(158, 36%, 37%);
+    font-family: inherit;
+    font-weight: 800;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.btn:hover{
+    background-color: hsl(158, 36%, 30%);
+}
+
+.btn img{
+    position: relative;
+    top:3px;
+    padding-right: 8px;
+    height: 20px;
+}
+
+.container{
+    width:80%;
+    margin-bottom: 20px;
+}
+
+@media (min-width:640px){
+    .container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        width: 600px;
+    }
+
+    .container img{
+        height: 100%;
+        border-radius: 1rem 0 0 1rem;
+    }
+    
+    article:last-child{
+        margin: 0;
+        border-radius: 0 1rem 1rem 0;
+    }
+
+}
